@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+   <style>
+
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    nav{
+        width: 100%;
+        height: 55px;
+       
+        position: fixed;
+        background-image: linear-gradient(#edf1f2,#e0f0f5);
+    }
+    .logo{
+        font-size: 40px;
+        font-weight: bold;
+        float: left;
+        color: rgb(21, 139, 8);
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        cursor: pointer;
+    }
+    
+    
+    .head{
+        color: rgb(163, 30, 30);
+         float: right;
+         margin-right: 20px;
+    }
+    nav li{
+        display: inline;
+        word-spacing: 50px;
+        padding: 0px 30px;
+        font-size: 18px;
+        text-transform: uppercase;
+    
+    }
+    
+    
+    .header1{
+        background-color: rgb(42, 42, 70);
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        
+     }
+     .oo{
+       
+        font-size: 30px;
+      margin-left: 300px;
+      color:white;
+      font-style: italic;
+     }
+     .ooo{
+        font-size: 50px;
+      margin-left: 400px;
+      color:white;
+     }
+     
+     .oooo{
+        font-size: 40px;
+      margin-left: 500px;
+      color:white;
+      background-color: rgb(189, 189, 61);
+      margin-right: 550px;
+     }
+     
+     
+     
+     *{
+        box-sizing: border-box;
+        
+     }
+     .columns{
+        float: left;
+        width: 33.3%;
+        padding: 5px;
+      
+     }
+     .row::after{
+        content: "";
+        display:table;
+        clear: both;
+        
+     }
+     
+     *{
+        box-sizing: border-box;
+       
+     }
+     .colum{
+        float: left;
+        width: 50%;
+        padding: 5px;
+     }
+     .ro::after{
+        content: "";
+        display:table;
+        clear: both;
+        width: 50%;
+     }
+     
+     .about{
+        background-color: #141a34;
+     }
+     .hillata{
+        width: 400px;
+        height: 700px;
+        float: left;
+      
+     }
+     .hh{
+        background-color: aquamarine;
+     }
+     .okk{
+        background-color: rgb(239, 235, 224);
+     }
+     .p1{
+        font-size:xx-large;
+        color: rgb(11, 162, 64); ;
+        float: right;
+        margin-right: 100px;
+        
+     }
+     .p2{
+        color:rgb(21, 21, 106);
+        float: right;
+        font-size: x-large;
+        margin-right: 60px;
+       
+     }
+     .p3{
+        width: 642px;
+        color: rgba(3,70,5,1);
+        position: left;
+        top: 2739px;
+        left: 48px;
+        margin-left: 600px;
+        font-family: Inika;
+        font-weight: Regular;
+        font-size: 32px;
+        opacity: 1;
+        text-align: left;
+        
+      }
+     .p4{
+        width: 145px;
+        height: 138px;
+        background: url("../images/v4_24.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        margin-left: 450px;
+        margin-top: 900px;
+        font-size: 18px;
+        opacity: 1;
+        position: absolute;
+        top: 1100px;
+        left: 142px;
+        overflow: hidden;
+       
+      }
+     
+     
+     *{
+        margin: 0;
+        padding: 0;
+        font-family:'hoppins', sans-serif;
+        box-sizing: border-box;
+     
+     }
+     *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+     }
+     .container{
+        width: 100%;
+        height: 100vh;
+        background: #141a34;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+     
+     .useful-links{
+        position: absolute;
+        top: 5%;
+        right: 5%;
+     
+     }
+     .useful-links a{
+        display: block;
+        color: #fff;
+        text-decoration: none;
+     }
+     
+     .container form{
+        width: 90%;
+        max-width: 500px;
+        padding: 50px 30px 20px;
+        background: #fff;
+        border-radius: 4px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+        position: relative;
+     }
+     .fa-paper-plane{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background: #fff;
+        font-size: 26px;
+        padding: 20px;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+     }
+     
+     .input-group{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+        position: relative;
+     }
+     .input-group label{
+        flex-basis: 28%;
+     }
+     .input-group input, .input-group textarea{
+        flex-basis: 68%;
+        background: transparent;
+        border: 0;
+        outline: 0;
+        padding: 10px 0;
+        border-bottom: 1px solid #999;
+        color: #333;
+        font-size: 16px;
+     }
+     ::placeholder{
+        font-size: 14px;
+     }
+     
+     form button{
+        background: #141a34;
+        color: #fff;
+        border-radius: 4px;
+        border: 1px solid rgba(255, 255, 255, 0.7);
+        padding: 10px 40px;
+        outline: 0;
+        cursor: pointer;
+        display: block;
+        margin: 30px auto 10px;
+     }
+     .input-group span{
+      position: absolute;
+      bottom: 12px;
+      right: 17px;
+       font-size: 14px;
+       color: red;
+     }
+     #submit-error{
+        color: red;
+     }
+     .input-group span i{
+        color: rgb(94, 94, 244);
+     }
+     
+    
+    
+    
+    
+    
+    
+    
+    @media only screen and (max-width:440px){
+    
+      
+      nav li{
+          display: grid;
+          font-size: 15px;
+        margin-left: 10%
+      
+      }
+      
+    
+     .oo{
+       
+        font-size: 13px;
+      margin-left: 100px;
+      
+     }
+     .ooo{
+        font-size: 30px;
+      margin-left: 100px;
+     
+     }
+     
+     .oooo{
+        font-size: 20px;
+      margin-left: 100px;
+     
+     }
+     
+     .columns{
+       float: left;
+       width: 50%;
+       padding: 2px;
+     
+    }
+    .colum{
+      
+       width: 60%;
+       padding: 3px;
+    }
+    .ro::after{
+       
+       width: 70%;
+    }
+     
+    .hillata{
+       width: 200px;
+       height: 350px;
+    }
+    .p1{
+       font-size:x-large;
+       
+    }
+    .p2{
+       font-size: large;
+    }
+    .p3{
+       width: 0px;
+      margin-top: 220px;
+       margin-left: 10px;
+       font-size: medium;
+      
+     }
+    .p4{
+       width: 0px;
+       height: 138px;
+      
+       margin-left: 10px;
+       margin-top: 1000px;
+       font-size: 15px;
+      
+       top: 2200px;
+      margin-left:  22px;
+       
+      
+     }
+    
+    
+    }
+     
+
+   </style>
+</head>
+<body>
+    
+<nav>
+    <div class="logo">
+      <p>FSE</p>
+    </div>
+    <ul class="head">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#portifolio">PORTIFOLIO</a></li>
+        <li><a href="#services">SERVICE</a></li>
+        <li><a href="#contacts">CONTACT</a></li>
+        
+    </ul>
+</nav>
+<div class="header1">
+    <br><br><br><br><br><br><br><br>
+    <p class="oo">
+        Welcome to Our studio!
+    </p>
+    <br><br><br><br><br>
+    <b class="ooo">IT'S NICE TO MEET YOU</b>
+    <br><br><br><br><br><br><br><br>
+    <p class="oooo">TELL ME MORE</p>
+   </div>
+
+    <br><br><br><br><br>
+   <div class="hh">
+    <p id="services">
+        <h2>
+            <b>
+                SERVICE
+            </b>
+        </h2>
+    </p>
+    <div class="row">
+        <div class="columns">
+                      <img src="/images/chat 1.png" alt="">
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident laudantium, voluptatum fugit molestias obcaecati sunt nostrum assumenda sint recusandae aspernatur possimus blanditiis natus iusto deleniti voluptas incidunt ullam magnam unde?</p>
+    
+        </div>
+        <div class="columns">
+                           <img src="/images/chart2.png" alt="">
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, facere cumque. Laboriosam id quas adipisci voluptatem totam, dignissimos soluta eius quasi. Ut, nesciunt! Deserunt iusto ad animi accusantium nostrum magnam.</p>
+        </div>
+        <div class="columns">
+                         <img src="/images/Chart3.png" alt="">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, esse. Libero vel sapiente architecto aperiam beatae impedit ab assumenda corporis repellendus maiores, unde natus reprehenderit ut veniam omnis provident repudiandae mollitia? Error inventore sit unde!</p>
+           
+        </div>
+
+   </div>
+<br><br>
+       
+
+<p id="portifolio">
+    <h2>
+        <b>
+            <br> PORTIFOLIO
+        </b>
+    </h2>
+</p>
+
+        
+
+<div class="okk">
+    <div class="ro">
+        <div class="colum">
+            <img src="/images/im1.jpg" alt="">
+    <p>Web design</p>
+        </div>
+        <div class="colum">
+            <img src="/images/im2.jpg" alt="">
+           <p>Web hosting</p>
+        </div>
+        <div class="colum">
+            <img src="/images/im3.jpg" alt="">
+           <p>Logo design</p>
+        </div>
+        <div class="colum">
+            <img src="/images/im4.jpg" alt="">
+            <p>Cyber security</p>
+        </div>
+</div>
+
+
+    <br><br>
+
+
+<p id="about">
+    <h2>
+        <b>
+         <br>  ABOUT
+        </b>
+    </h2>
+
+<img class="hillata" src="/images/hillata.jpg" alt="">
+<div class="p1">
+    <p>
+        Hello again, my name is Felicien Sematama.
+    </p>
+    <p> I provide web design services worldwide. </p>
+</div>
+
+
+<br><br><br><br><br><br><br><br>
+
+<div class="p2">
+    <p>I have working experience of 4+ years in computer
+programming</p>  
+and 8+ years of working experience in web design</p>
+</div>
+<br><br><br><br><br><br><br><br><br>
+<div class="p3">
+    
+        I have  Bachelors degree in Electronics and 
+ Telecommunication engineering.</p>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="p4">
+ 
+ <p> I have skills in:</p>
+ <br>
+    <p>. Python </p>
+    <p>. Javasript </p>
+    <p>. HTML and CSS </p>
+    <p>. C++ </p>
+    
+    
+</div>
+</p>
+
+<br><br><br><br><br><br><br><br><br>
+      
+<p id="contacts">
+    <h2>
+        <b>
+            CONTACT
+        </b>
+    </h2>
+</p>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<link rel="stylesheet" href="/portifolioooo/css/final.css">
+<style>
+
+
+	*{
+		font-family: poppins;
+       
+	
+	}
+    
+.sf{
+    align-items: center;
+    margin-left: 500px;
+}
+	body{
+		margin: 0;
+		width: 100%;
+        background-color: #9be9e9;
+		
+	}
+	#overlay{
+		background-color: #9be9e9;
+	
+	}
+	form{
+		max-width: 550px;
+		width: 90%;
+		background:  #11023c;
+		margin: 1vh auto 0 auto;
+		padding: 40px;
+		border-radius: 3px;
+		box-sizing: border-box;
+        color: rgb(246, 242, 242);
+	}
+	h1{
+		margin: 0;
+		text-align: center;
+	}
+	label{
+		display: block;
+		margin: 20px 0;
+	}
+	input,textarea{
+		width: 100%;
+		padding: 10px;
+		box-sizing: border-box;
+		outline: none;
+		resize: none;
+		border: none;
+		border-bottom: solid #711313;
+	}
+	input[type="text"]:focus,textarea:focus{
+		border-bottom:1px solid rgb(255,0,106) ;
+	}
+	textarea::-webkit-scrollbar{
+		width: 4px;
+	
+	}
+	textarea::-webkit-scrollbar-thumb{
+		background-color: rgb(255,0,106);
+	}
+	input[type="submit"]{
+		margin-top:30px;
+		width: 90%;
+		max-width: 200px;
+		background: linear-gradien(to right,rgb(255,0,106),rgb(255,67,61));
+		color:white;
+		font-size: 17px;
+		cursor: pointer;
+		border-radius: 3px;
+		background-color: #ff4d05;
+	
+	}
+	.error{
+		border-bottom: 1px solid red;
+		color: red;
+	
+	}
+	#success{
+		color: #28a745;
+	}
+	.text{
+		background-color:#edf2f2 ;
+		
+	}
+	.form1{
+		width: 100%;
+		right: 300px;
+	}
+	.dive{
+		width: 100%;
+		margin-left: 400px;
+	
+	}
+	.nam,.emay,.phon{
+		background-color: #e6eded;
+	}
+	.contact-me{
+	top:400px;
+	left: 400px;
+	}
+
+
+</style>
+
+</head>
+<body>
+    <div>
+        <h1 class="contact-me">Contact <span>Us</span></h1>
+       
+    </div>
+    <form class="form1" onsubmit="event.preventDefault(); validateForm()">
+        <h1></h1>
+
+        <label for="name">Name:</label>
+        <input  class="nam" type="text" id="name" placeholder="Your name">
+        <small class="error"></small>
+
+        <label for="email">Email:</label>
+        <input  class="emay" type="text" id="email" placeholder="Your email">
+        <small class="error"></small>
+
+       
+
+        <label for="message">Message:</label>
+        <textarea class="text"  name="" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
+        <small class="error"></small>
+
+        <div class="center"></div>
+        <input type="submit" value="Send Message">
+        <p id="success"></p>
+        </form>
+</div>
+
+<script>
+	const nameInput =document.querySelector("#name");
+	const email =document.querySelector("#email");
+	const message=document.querySelector('#message');
+    const phone=document.querySelector('#phone');
+	const errorNodes= document.querySelectorAll('.error');
+    
+	
+	
+    function validateForm(){
+		clearMessages();
+		let errorFlag=false;
+		if(nameInput.value.length<1){
+			errorNodes[0].innerText="Name cannot be blank";
+			nameInput.classList.add('error-border');
+			errorFlag=true;
+		}
+
+		if(!eamilIsValid(email.value)){
+			errorNodes[1].innerText="Invalid email address";
+			email.classList.add('error-border');
+			errorFlag=true;
+		}
+
+
+
+        function validatephone(){
+            var phone= document.getElementById('contact-phone').value;
+            if(phone.length==0){
+                 phoneError.innerHTML ='phone is required';
+                 return false;
+            }
+            if(phone.length !==10){
+                phoneError.innerHTML= 'Phone number should be 10 digits';
+                return false;
+            }
+                if(!phone.match(/^[0-9]{10}$/)){
+                    phoneError.innerHTML='Only digits please';
+                }
+            
+            phoneError.innerHTML= '<i class="fa-solid fa-circle-check"></i>';
+            return true;
+        }
+
+		if(message.value.length<1){
+			errorNodes[2].innerText="Please enter message";
+			message.classList.add('error-border');
+			errorFlag=true;
+	
+		}
+		if(!errorFlag){
+			success.innerText="Done";
+		}
+	
+	}
+	// clear error /sucess messages
+	function clearMessages(){
+		for(let i=0;i<errorNodes.length;i++){
+			errorNodes[i].innerText="";
+		}
+		success.innerText="";
+		nameInput.classList.remove('error-border');
+		email.classList.remove('error-border');
+		message.classList.remove('error-border');
+	}
+	
+	//check if email is valid
+	function eamilIsValid(email){
+		let pattern=/\S+@\S+\.\S+/;
+		return pattern.test(email);
+	
+	}
+	</script>
+
+
+
+
+</body>
+</html>
